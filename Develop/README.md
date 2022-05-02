@@ -27,10 +27,10 @@
     
 
   ## Contribution
-  contrib
+  contribu
 
   ## Tests
-  test
+  test test test test test
 
   ## Questions
   Please contact me with any questions
