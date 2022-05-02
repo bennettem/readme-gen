@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 // questions : Title of project, description -> installation instructions, usage info, contribut guideline, test instructions
@@ -12,7 +14,7 @@ const questions = [
       if (title) {
         return true;
       } else {
-        console.log("Please enter your projects name");
+        console.log("Please enter your project's title");
         return false;
       }
     },
@@ -20,7 +22,7 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "How would you describe your project?: (REQUIRED)",
+    message: "Please describe your project: (REQUIRED)",
     validate: (description) => {
       if (description) {
         return true;
@@ -33,18 +35,18 @@ const questions = [
   {
     type: "input",
     name: "installation",
-    message: "Please give installation instructions",
+    message: "Please provide installation instructions:",
   },
   {
     type: "input",
     name: "usage",
-    message: "Please give usage information",
+    message: "Please give usage information:",
   },
   {
     type: "checkbox",
     name: "license",
     message:
-      "Please select which license that your project uses (select all that apply)",
+      "Please select which license(s) that your project uses: (select all that apply)",
     choices: [
       "Apache",
       "Boost",
@@ -72,7 +74,7 @@ const questions = [
   {
     type: "input",
     name: "github",
-    message: "Please enter your GitHub username (required):",
+    message: "Please enter your GitHub username: (REQUIRED)",
     validate: (github) => {
       if (github) {
         return true;
@@ -85,7 +87,7 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "Please enter your email address (required)",
+    message: "Please enter your email address: (REQUIRED)",
     validate: (email) => {
       if (email) {
         return true;
@@ -98,13 +100,27 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(`./${fileName}`, data, (error) => {
+      if (error) {
+        console.log(error);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: "File created",
+      });
+    });
+  });
+}
 
 // TODO: Create a function to initialize app
 function init() {
-  return inquirer.prompt(questions).then((data) => {
-    console.log(data);
-  });
+  return inquirer
+    .prompt(questions)
+    .then((data) => generateMarkdown(data))
+    .then((markdown) => writeToFile("README.md", markdown));
 }
 
 // Function call to initialize app
