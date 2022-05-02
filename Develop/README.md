@@ -1,9 +1,9 @@
 
-  # title
+  # README Gen
    
 
   ## Description
-  description
+  this is a project that will generate a readme once all the question prompts are filled out
 
   ## Table of Contents
 
@@ -16,10 +16,10 @@
   - [Questions](#questions)
 
   ## Installation
-  install
+  install node and node modules 
 
   ## Usage
-  use
+  use is for readme
 
   
     ## License
@@ -27,16 +27,16 @@
     
 
   ## Contribution
-  contribu
+  in order to contribute blah bla blah
 
   ## Tests
-  test test test test test
+  test instructions are as follows
 
   ## Questions
   Please contact me with any questions
 
   *Email:
-  email
+  ebennett@email.com
 
   *GitHub:
-  https://github.com/github
+  https://github.com/bennettem
