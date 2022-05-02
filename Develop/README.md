@@ -1,9 +1,9 @@
 
-  # df
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  # README EXAMPLE
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Description
-  dsf
+  this is an example of the README gen 
 
   ## Table of Contents
 
@@ -16,26 +16,26 @@
   - [Questions](#questions)
 
   ## Installation
-  dsf
+  this will allow users to know how to use your application
 
   ## Usage
-  dsf
+  what uses your application has goes here
 
   ## License
-  The MIT License
-  https://opensource.org/licenses/MIT
+  GNU GPL v3
+  https://www.gnu.org/licenses/gpl-3.0
 
   ## Contribution
-  dsfdsf
+  n/a
 
   ## Tests
-  sdf
+  n/a
 
   ## Questions
   Please contact me with any questions
 
   *Email:
-  sdf
+  email
 
   *GitHub:
-  https://github.com/sdf
+  https://github.com/github
