@@ -18,10 +18,20 @@ After the user completes all the prompts the README will be generated!
  
  https://github.com/bennettem/readme-gen
  
+ ## Video Link
+ 
+ Video: [YouTube](https://youtu.be/QfJaOKrrz9I)
+ 
+ 
  ## Demo
 
-https://user-images.githubusercontent.com/98004599/166180973-f388b7f4-e19b-45ef-bc62-59b960ce6e98.mp4
 
+
+https://user-images.githubusercontent.com/98004599/166182330-d168f7e3-2b3e-4f05-93fd-fdc73445d2b2.mp4
+
+
+
+[](https://github.com/bennettem/readme-gen/blob/main/Images/guide.gif)
 
  ![alt text](https://github.com/bennettem/readme-gen/blob/main/Images/Screenshot.jpg)
  
