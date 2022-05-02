@@ -61,13 +61,31 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license) {
-    return `
-    ## License
-    License info: ${renderLicenseLink(license)}
-    `;
+  if (license === "Apache") {
+    return "Apache License 2.0";
+  } else if (license === "Boost") {
+    return "Boost Software License 1.0";
+  } else if (license === "BSD") {
+    return "BSD 3-Clause License";
+  } else if (license === "Eclipse") {
+    return "Eclipse Public License 1.0";
+  } else if (license === "GNU") {
+    return "GNU GPL v3";
+  } else if (license === "IBM") {
+    return "BM Public License Version 1.0";
+  } else if (license === "ISC") {
+    return "ISC License (ISC)";
+  } else if (license === "MIT") {
+    return "The MIT License";
+  } else if (license === "Mozilla") {
+    return "Mozilla Public License 2.0";
+  } else if (license === "SIL") {
+    return "SIL Open Font License 1.1";
+  } else if (license === "Unlicense") {
+    return "The Unlicense";
+  } else {
+    return " ";
   }
-  return " ";
 }
 
 // TODO: Create a function to generate markdown for README
@@ -95,7 +113,9 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ## License
   ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contribution
   ${data.contribution}

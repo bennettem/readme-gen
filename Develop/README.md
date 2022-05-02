@@ -1,9 +1,9 @@
 
-  # README Gen
-   
+  # df
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  this is a project that will generate a readme once all the question prompts are filled out
+  dsf
 
   ## Table of Contents
 
@@ -16,27 +16,26 @@
   - [Questions](#questions)
 
   ## Installation
-  install node and node modules 
+  dsf
 
   ## Usage
-  use is for readme
+  dsf
 
-  
-    ## License
-    License info:  
-    
+  ## License
+  The MIT License
+  https://opensource.org/licenses/MIT
 
   ## Contribution
-  in order to contribute blah bla blah
+  dsfdsf
 
   ## Tests
-  test instructions are as follows
+  sdf
 
   ## Questions
   Please contact me with any questions
 
   *Email:
-  ebennett@email.com
+  sdf
 
   *GitHub:
-  https://github.com/bennettem
+  https://github.com/sdf

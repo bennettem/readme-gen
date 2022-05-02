@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "checkboxes": "^1.3.3",
     "inquirer": "^6.5.2"
   }
 }
